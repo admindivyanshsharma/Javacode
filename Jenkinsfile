@@ -24,7 +24,7 @@ pipeline {
                 // Copy files to deployment directory
                 sh 'mkdir -p deploy'
                 sh 'cp HelloWorld.jar deploy/'
-                sh 'cp .deployment deploy/'
+                
                 
                 // Your deployment step here, it could be deploying to Azure App Service, etc.
                 // For Azure App Service, you'd need to upload the deployment directory.
