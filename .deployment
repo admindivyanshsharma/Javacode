@@ -1,1 +1,9 @@
-
+ssh -o StrictHostKeyChecking=no -tt devops@98.70.91.102 <<"EOF"
+  cd /home/devops/Fortesting/test
+  git stash
+  git pull origin dev
+  git checkout dev
+  git reset --hard
+  git pull origin dev
+  exit
+EOF
