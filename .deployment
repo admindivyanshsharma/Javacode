@@ -5,5 +5,6 @@ ssh -o StrictHostKeyChecking=no -tt devops@98.70.91.102 <<"EOF"
   git checkout dev
   git reset --hard
   git pull origin dev
+
 exit
 EOF
